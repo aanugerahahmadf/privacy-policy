@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebijakan Privasi - Wedding Organizer Platform (Backend / API)</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #f7f7f9;
+    padding: 24px 16px 60px;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 48px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+  }
+  @media (max-width: 600px) { .container { padding: 24px 20px; } }
+  h1 { font-size: 28px; margin-bottom: 4px; color: #1a1a1a; }
+  h2 { font-size: 20px; margin: 32px 0 12px; color: #1a1a1a; border-bottom: 2px solid #f0f0f0; padding-bottom: 8px; }
+  h3 { font-size: 16px; margin: 20px 0 8px; color: #333; }
+  p { margin-bottom: 12px; }
+  ul, ol { margin: 0 0 12px 24px; }
+  li { margin-bottom: 6px; }
+  .meta { color: #777; font-size: 14px; margin-bottom: 24px; }
+  .app-badge {
+    display: inline-block; background: #fdf0e6; color: #b45309;
+    padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .updated { background: #f3f4f6; border-radius: 8px; padding: 10px 16px; font-size: 14px; color: #555; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: #f9fafb; font-weight: 600; }
+  strong { color: #1a1a1a; }
+  .footer-note { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 13px; color: #888; }
+</style>
+</head>
+<body>
+<div class="container">
+  <span class="app-badge">Website / Admin Panel / REST API</span>
+  <h1>Kebijakan Privasi</h1>
+  <p class="meta">Wedding Organizer &mdash; Platform Manajemen Pernikahan</p>
+  <div class="updated">Terakhir diperbarui: 4 September 2026</div>
+
+  <p>Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, memproses, menyimpan, dan melindungi data pribadi Anda pada <strong>platform Wedding Organizer</strong>, yang mencakup website, panel admin, dan layanan aplikasi pemrograman antarmuka (REST API) yang digunakan oleh aplikasi mobile (selanjutnya disebut &ldquo;Platform&rdquo;). Dengan menggunakan Platform atau layanan kami, Anda menyetujui praktik yang diuraikan dalam dokumen ini.</p>
+
+  <h2>1. Data yang Kami Kelola</h2>
+  <p>Sebagai penyedia layanan backend, Platform memproses data pribadi berikut:</p>
+
+  <h3>a. Data Pengguna (Customer / Pengantin)</h3>
+  <ul>
+    <li>Nama, alamat email, nomor telepon, kata sandi (dienkripsi), dan foto profil.</li>
+    <li>Detail rencana pernikahan: tanggal acara, lokasi, jumlah tamu, dan preferensi.</li>
+    <li>Riwayat pesanan, wishlist, voucher, serta saldo dan mutasi dompet (wallet).</li>
+    <li>Ulasan dan laporan (report) terkait produk, vendor, pesanan, atau pengguna.</li>
+  </ul>
+
+  <h3>b. Data Vendor / Mitra Layanan</h3>
+  <ul>
+    <li>Identitas vendor, kontak, portofolio/galeri, dan paket layanan yang ditawarkan.</li>
+    <li>Jadwal ketersediaan dan data operasional layanan.</li>
+  </ul>
+
+  <h3>c. Data Transaksi dan Pembayaran</h3>
+  <ul>
+    <li>Detail top-up saldo, pembayaran DP/pelunasan, dan referensi transaksi.</li>
+    <li>Kami <strong>tidak menyimpan</strong> nomor kartu kredit/debit atau data pembayaran sensitif; proses pembayaran ditangani penyedia pembayaran resmi (misalnya BRI) melalui gateway yang aman.</li>
+  </ul>
+
+  <h3>d. Data Percakapan dan Notifikasi</h3>
+  <ul>
+    <li>Isi percakapan konsultasi antara pengguna dan tim layanan (chat).</li>
+    <li>Preferensi notifikasi dan riwayat pengiriman pesan.</li>
+  </ul>
+
+  <h3>e. Data Teknis dan Aktivitas</h3>
+  <ul>
+    <li>Log server, alamat IP, jenis perangkat, sistem operasi, browser, dan pengenal sesi.</li>
+    <li>Riwayat login, aktivitas keamanan akun, dan perangkat yang terpercaya (trusted devices).</li>
+    <li>Data analitik penggunaan website dan API secara agregat.</li>
+  </ul>
+
+  <h2>2. Tujuan Pemrosesan Data</h2>
+  <ul>
+    <li>Menyediakan, mengoperasikan, dan memelihara layanan Platform serta REST API.</li>
+    <li>Memproses pesanan, pembayaran, voucher, wishlist, dan saldo dompet.</li>
+    <li>Mengelola akun, autentikasi, keamanan, dan pencegahan penipuan.</li>
+    <li>Menjalankan fitur pencarian CBIR dan integrasi dengan AI Engine.</li>
+    <li>Mengirim notifikasi, pemberitahuan layanan, dan dukungan pelanggan.</li>
+    <li>Menghasilkan laporan analitik internal (pendapatan, performa, dan operasional).</li>
+    <li>Mematuhi kewajiban hukum dan peraturan yang berlaku.</li>
+  </ul>
+
+  <h2>3. Akses Data oleh Tim Internal (Panel Admin)</h2>
+  <p>Tim internal kami yang berwenang (melalui panel admin) memiliki akses yang dibatasi ke data pengguna, vendor, pesanan, keuangan, dan laporan hanya sebatas yang diperlukan untuk menjalankan operasional, verifikasi top-up/pembayaran, dan penanganan dukungan. Seluruh akses dicatat dan diawasi (audit log).</p>
+
+  <h2>4. Keamanan Data</h2>
+  <ul>
+    <li>Enkripsi data saat transit (TLS/HTTPS) dan penyimpanan data sesuai praktik yang wajar.</li>
+    <li>Kata sandi di-hash dan tidak pernah disimpan dalam bentuk teks biasa.</li>
+    <li>Autentikasi multi-faktor (2FA), pencatatan aktivitas login, dan manajemen perangkat tepercaya.</li>
+    <li>Kontrol akses berbasis peran (role-based access control) dengan prinsip kebutuhan minimum.</li>
+    <li>Backup berkala dan prosedur pemulihan data untuk menjaga ketersediaan layanan.</li>
+  </ul>
+  <p>Meskipun kami menerapkan langkah-langkah tersebut, tidak ada sistem yang sepenuhnya aman. Kami tidak dapat menjamin keamanan absolut atas data yang dikirimkan atau disimpan.</p>
+
+  <h2>5. Pihak Ketiga dan Layanan yang Digunakan</h2>
+  <table>
+    <tr><th>Layanan</th><th>Tujuan</th></tr>
+    <tr><td>Penyedia hosting/infrastruktur cloud</td><td>Menjalankan server, penyimpanan, dan database.</td></tr>
+    <tr><td>Firebase (Analytics, Messaging)</td><td>Analitik dan notifikasi push terintegrasi.</td></tr>
+    <tr><td>Gerbang pembayaran (mis. BRI)</td><td>Pemrosesan top-up dan pembayaran secara aman.</td></tr>
+    <tr><td>Layanan real-time chat (Reverb / Pusher)</td><td>Fitur percakapan secara langsung.</td></tr>
+    <tr><td>AI Engine (CBIR / pemrosesan gambar)</td><td>Memproses unggahan gambar untuk fitur pencarian visual.</td></tr>
+    <tr><td>Penyedia autentikasi sosial (Google / Apple / Facebook)</td><td>Opsi masuk dengan akun pihak ketiga.</td></tr>
+  </table>
+  <p>Pihak ketiga diwajibkan menjaga kerahasiaan data dan hanya menggunakannya untuk tujuan yang disepakati sesuai kebijakan privasi masing-masing.</p>
+
+  <h2>6. Berbagi Data dengan Pihak Lain</h2>
+  <ul>
+    <li>Vendor/mitra layanan yang Anda pilih, sebatas data yang diperlukan untuk merealisasikan layanan.</li>
+    <li>Penyedia layanan cloud, analitik, dan keamanan.</li>
+    <li>Pihak yang diwajibkan oleh hukum, perintah pengadilan, atau proses hukum yang berlaku.</li>
+  </ul>
+  <p>Kami tidak menjual data pribadi Anda kepada pihak mana pun.</p>
+
+  <h2>7. Retensi Data</h2>
+  <p>Data disimpan selama diperlukan untuk tujuan layanan, operasional, keamanan, dan kepatuhan hukum. Setelah tidak diperlukan, data dihapus atau dianonimkan sesuai kebijakan internal, termasuk data log dan mutasi transaksi sesuai ketentuan yang berlaku.</p>
+
+  <h2>8. Hak Anda</h2>
+  <ul>
+    <li>Mengakses data pribadi yang kami kelola.</li>
+    <li>Meminta perbaikan data yang tidak akurat.</li>
+    <li>Meminta penghapusan akun dan data sesuai ketentuan yang berlaku.</li>
+    <li>Membatasi atau menolak pemrosesan data tertentu.</li>
+    <li>Menarik persetujuan yang telah diberikan.</li>
+    <li>Mengajukan keberatan terhadap penggunaan data untuk tujuan tertentu.</li>
+  </ul>
+  <p>Untuk menjalankan hak-hak tersebut, hubungi kami melalui kontak di bagian akhir dokumen ini.</p>
+
+  <h2>9. Anak di Bawah Umur</h2>
+  <p>Platform tidak ditujukan untuk anak di bawah usia yang diizinkan hukum setempat menggunakan layanan digital secara independen. Kami tidak sengaja mengumpulkan data pribadi anak di bawah umur tanpa persetujuan orang tua atau wali.</p>
+
+  <h2>10. Perubahan Kebijakan</h2>
+  <p>Kami dapat memperbarui Kebijakan Privasi ini sewaktu-waktu. Perubahan material akan kami informasikan melalui website, aplikasi, atau saluran yang tersedia. Tanggal pembaruan terakhir ditampilkan di bagian atas dokumen ini.</p>
+
+  <h2>11. Kontak</h2>
+  <p>Jika Anda memiliki pertanyaan, keluhan, atau permintaan terkait Kebijakan Privasi ini, silakan hubungi kami:</p>
+  <ul>
+    <li>Email: <strong>privacy@yourapp.com</strong></li>
+    <li>Alamat: [Nama Perusahaan / Developer]</li>
+  </ul>
+
+  <p class="footer-note">Dokumen ini bersifat contoh dan dapat disesuaikan dengan kebutuhan bisnis, nama aplikasi, dan peraturan yang berlaku di wilayah hukum Anda (misalnya UU PDP Indonesia atau GDPR). Disarankan berkonsultasi dengan konsultan hukum untuk kepatuhan yang lebih lengkap.</p>
+</div>
+</body>
+</html>
